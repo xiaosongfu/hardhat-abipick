@@ -1,0 +1,39 @@
+{
+  "name": "hardhat-abipick",
+  "version": "0.1.0",
+  "description": "Hardhat plugin for pick abi",
+  "repository": "github:xiaosongfu/hardhat-abipick",
+  "author": "xiaosongfu",
+  "license": "MIT",
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "hardhat",
+    "hardhat-plugin",
+    "abi"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "scripts": {
+    "prettier": "prettier --write 'src/**/*.{js,ts}'",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@ethersproject/abi": "^5.7.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "hardhat": "^2.22.3"
+  }
+}
